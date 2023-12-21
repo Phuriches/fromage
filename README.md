@@ -52,6 +52,14 @@ Check out `FROMAGe_example_notebook.ipynb` for examples on calling the model for
 
 Our model is trained on the [Conceptual Captions](https://ai.google.com/research/ConceptualCaptions) dataset. After following the instructions on the website to download the captions and images, format it into a `.tsv` file as follows:
 
+To download all data, run the following commands:
+```
+mkdir data && cd data
+curl 'https://storage.googleapis.com/gcc-data/Train/GCC-training.tsv' -o GCC-training.tsv
+curl 'https://storage.googleapis.com/gcc-data/Validation/GCC-1.1.0-Validation.tsv' -o GCC-1.1.0-Validation.tsv
+curl 'https://storage.googleapis.com/conceptual-captions-v1-1-labels/Image_Labels_Subset_Train_GCC-Labels-training.tsv' -o Image_Labels_Subset_Train_GCC-Labels-training.tsv
+```
+
 ```
 caption image
 A picture of a cat  cat.png
